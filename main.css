@@ -1,16 +1,41 @@
+@font-face {
+  font-display: swap;
+  font-family: "Space Mono";
+  font-weight: 700;
+  src: url("./fonts/spacemono700.woff2") format("woff2"),
+       url("./fonts/spacemono700.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  src: url("./fonts/lexenddeca400.woff2") format("woff2"),
+       url("./fonts/lexenddeca400.woff") format("woff");  
+}
+
 *{
   box-sizing: border-box;
 }
 
 body {
+  font-family: "Lexend Deca", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
   margin: 0;
 }
 img {
   display: block;
 }
 
-/* .site-header {
-} */
+.site-header {
+  font-family: "Space Mono", "Courier New", monospace;
+  font-style: Bold;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+}
 .counter {
   width: 1150px;
   margin-right: auto;
@@ -25,16 +50,8 @@ img {
 .site-logo-header {
   margin-right: 58px;
 }
-/* .logo-header-img {
-} */
-/* .header-nav {
-
-} */
 
 .header-nav-a {
-  font-style: Bold;
-  font-size: 15px;
-  line-height: 25px;
   text-decoration: none;
   color: #939caa;
 }
@@ -46,9 +63,6 @@ img {
   margin-bottom: 21px;
   margin-left: auto;
   padding: 14px 39px;
-  font-style: Bold;
-  font-size: 15px;
-  line-height: 25px;
   text-decoration: none;
   background-color: #fcb72b;
   color: #fff;
