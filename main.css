@@ -306,13 +306,38 @@ img {
 .continuation-img {
   border-radius: 50%;
 }
-.continuation-img::after {
+.service-continuation-items:nth-child(1) .continuation-img-div::after {
+  content: "";
   position: absolute;
   width: 735px;
-  height: 138px;
-  /* right: 0; */
-  content: "";
+  height: 153px;
+  right: -165px;
+  bottom: -5px;
   background-image: url("./images/serviceimgone.svg");
-  background-repeat: no-repeat;
-  z-index: 5;
+  z-index: 1;
 } 
+
+.service-continuation-items:nth-child(2) .continuation-img-div::before {
+  content: "";
+  position: absolute;
+  width: 735px;
+  height: 153px;
+  left: -165px;
+ 
+  background-image: url("./images/serviceimgtwo.svg");
+  z-index: 1;
+  background-repeat: no-repeat;
+} 
+
+.service-continuation-items:nth-child(3) .continuation-img-div::after {
+  content: "";
+  position: absolute;
+  width: 735px;
+  height: 153px;
+  top: 80px;
+  right: -538px;
+  /* bottom: -5px; */
+  background-image: url("./images/serviceimgthere.svg");
+  z-index: 1;
+  background-repeat: no-repeat;
+}
