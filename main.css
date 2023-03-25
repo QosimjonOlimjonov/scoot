@@ -336,8 +336,132 @@ img {
   height: 153px;
   top: 80px;
   right: -538px;
-  /* bottom: -5px; */
   background-image: url("./images/serviceimgthere.svg");
   z-index: 1;
   background-repeat: no-repeat;
+}
+.hover-button {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 3px solid #fcb72b;
+}
+.hover-button:hover {
+  background-color: #f2f2f2;
+  color: #fcb72b;
+  /* border: 3px solid #fcb72b; */
+  transition: background-color 0.3s linear 0.5s,color 0.5s linear 0.1s;
+  transition: color 0.3s linear 0.5s,color 0.5s linear 0.1s;
+}
+
+
+/* article css start */
+
+.site-article {
+  position: relative;
+
+  background-color: #495567;
+}
+
+.container-article {
+  position: relative;
+}
+.article-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.article-div::after {
+  position: absolute;
+  content: "";
+  width: 1153px;
+  height: 157px;
+  right: -308px;
+  bottom: 0;
+  background-image: url("./images/articleafter.svg");
+  background-repeat: no-repeat;
+}
+
+.article-h2-div {
+  padding-top: 102px;
+  padding-bottom: 102px;
+  width: 420px;
+}
+.article-h2 {
+  font-family: "Space Mono", "Courier New", monospace;
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  color: #fff;
+}
+.article-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.article-items {
+  list-style: none;
+}
+.article-items:not(:last-child) {
+  margin-right: 18px;
+}
+.article-items-a {
+  text-decoration: none;
+}
+
+/* site footer start */
+
+.site-footer {
+  background-color: #333a44;
+}
+
+.footer-div {
+  display: flex;
+  align-items: center;
+}
+.site-logo-footer {
+  margin-right: 59px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  text-decoration: none;
+  /* display: block; */
+}
+.footer-nav-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.footer-nav-items {
+  list-style: none;
+}
+.footer-items-a {
+  text-decoration: none;
+  line-height: normal;
+  color: #939caa;
+}
+.footer-nav-items:not(:last-child) {
+  margin-right: 32px;
+}
+.footer-social-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-left: 0;
+}
+.footer-social-items {
+  list-style: none;
+  
+}
+.footer-social-items:not(:last-child) {
+  margin-right: 32px;
+}
+.social-a {
+  text-decoration: none;
 }
